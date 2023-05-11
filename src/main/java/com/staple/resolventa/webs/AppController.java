@@ -15,11 +15,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class AppController {
 
-    @PostMapping("/process")
+    @PostMapping("/process/")
     public ResponseEntity<String> processData(@RequestBody String data) {
-//        // Ваш код для обработки данных
-//        System.out.println("Получены данные: " + data);
-//        return new ResponseEntity<>("Данные успешно обработаны", HttpStatus.OK);
+        System.out.println("Получены данные: " + data);
 
         GsonBuilder builder = new GsonBuilder();
         Gson gson = builder.create();

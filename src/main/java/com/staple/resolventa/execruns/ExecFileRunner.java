@@ -28,7 +28,7 @@ public class ExecFileRunner {
 
         int exitCode = process.waitFor();
         if(exitCode != 0)
-            throw new NotZeroExitCodeException("Something is wrong with your executable...");
+            throw new NotZeroExitCodeException("Something is wrong with your input data or server executable...");
 
         return res;
     }
